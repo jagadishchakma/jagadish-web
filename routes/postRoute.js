@@ -52,6 +52,19 @@ router.get('/', (req, res) => {
     })
 });
 
+                // get posts by category
+router.get('/category/:category', (req, res) => {
+    const {category} = req.params;
+    Posts.find({category:category}, (err, result) => {
+        if(err){
+            res.status(401).json({error: 'Error Occured Getting Post'});
+        }else{
+            res.status(200).json(result);
+            
+        }
+    })
+});
+
             // get posts limit
 router.get('/limit', (req, res) => {
     Posts.find({}, (err, result) => {
