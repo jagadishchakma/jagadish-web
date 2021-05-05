@@ -29,7 +29,8 @@ const postSchema = new mongoose.Schema({
     date: {
         type: String,
         required: true,
-    }
+    },
+    tags: [String]
 });
 
 module.exports =  postSchema;
