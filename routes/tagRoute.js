@@ -4,7 +4,7 @@
 const { Router } = require('express');
 const express = require('express');
 const mongoose = require('mongoose');
-const categoySchema = require('../schemas/tagSchema');
+const tagSchema = require('../schemas/tagSchema');
 
 ////////////////////////////////////
 // Create category Sub Route
