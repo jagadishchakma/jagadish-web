@@ -46,7 +46,7 @@ mongoose.connect(uri,{
 /////////////////////////////////
 app.use('/category', categoryRoute);
 app.use('/post', postRoute);
-app.use('/tag', tagtRoute);
+app.use('/tag', tagRoute);
 
 
 /////////////////////////////////
