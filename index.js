@@ -9,6 +9,8 @@ const dotenv = require('dotenv');
 const categoryRoute = require('./routes/categoryRoute');
 const postRoute = require('./routes/postRoute');
 const tagRoute = require('./routes/tagRoute');
+const userRoute = require('./routes/userRoute');
+const commentRoute = require('./routes/commentRoute');
 
 
 
@@ -47,6 +49,8 @@ mongoose.connect(uri,{
 app.use('/category', categoryRoute);
 app.use('/post', postRoute);
 app.use('/tag', tagRoute);
+app.use('/user', userRoute);
+app.use('/comment', commentRoute);
 
 
 /////////////////////////////////
